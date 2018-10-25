@@ -31,7 +31,7 @@ return function (array $data){
 ?>
   <?php if(!$nolog) { ?>
 
-      <a href="<?=$logUrl?>" target="_blank" class="lightTipped">
+      <a href="<?=$logUrl?>" rel="noopener" target="_blank" class="lightTipped">
 
         <img src="<?=$logIcon?>" class="icon16" alt="LogIcon" title="LogIcon" />
         <?=$logDate?>

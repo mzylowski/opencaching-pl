@@ -7,7 +7,7 @@
                 <img src="/tpl/stdstyle/images/free_icons/vcard.png" alt="img">
             </div>
             <div class="dynamicMap_mapPopup-tableCell">
-                <a href="{{link}}" class="links" target="_blank">{{username}}</a>
+                <a href="{{link}}" class="links" rel="noopener" target="_blank">{{username}}</a>
             </div>
         </div>
         <div class="dynamicMap_mapPopup-tableRow">
@@ -29,7 +29,7 @@
                 <img src="/tpl/stdstyle/images/free_icons/email.png" alt="mailTo">
             </div>
             <div class="dynamicMap_mapPopup-tableCell">
-                <a class="links" href="/UserProfile/mailTo/{{userId}}" target="_blank"><?=tr('guides_sendemail')?></a>
+                <a class="links" href="/UserProfile/mailTo/{{userId}}" rel="noopener" target="_blank"><?=tr('guides_sendemail')?></a>
             </div>
         </div>
     </div>

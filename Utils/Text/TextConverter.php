@@ -53,7 +53,7 @@ class TextConverter
 
             $retval .= mb_substr($text, $curpos, $starthttp - $curpos);
             $url = mb_substr($text, $starthttp, $endhttp - $starthttp);
-            $retval .= '<a href="' . $url . '" alt="" target="_blank">' . $url . '</a>';
+            $retval .= '<a href="' . $url . '" alt="" rel="noopener" target="_blank">' . $url . '</a>';
 
             $curpos = $endhttp;
             if ($curpos >= mb_strlen($text)){

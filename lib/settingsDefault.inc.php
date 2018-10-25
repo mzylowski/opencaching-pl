@@ -118,12 +118,12 @@ $config = array(
     /** The filter fragment selecting provinces from nuts_codes table. */
     'provinceNutsCondition' => '`code` like \'PL__\'',
     /** Nature2000 link - used in viewcache.php */
-    'nature2000link' => '<a style="color:blue;" target="_blank" href="http://obszary.natura2000.org.pl/index.php?s=obszar&amp;id={linkid}">{sitename}&nbsp;&nbsp;-&nbsp;&nbsp;{sitecode}</a>',
+    'nature2000link' => '<a style="color:blue;" rel="noopener" target="_blank" href="http://obszary.natura2000.org.pl/index.php?s=obszar&amp;id={linkid}">{sitename}&nbsp;&nbsp;-&nbsp;&nbsp;{sitecode}</a>',
     /** See settings-example.inc.php for explanation */
     'mapsConfig' => array(
         'OSM' => array(
             'name' => 'OSM',
-            'attribution' => '&copy; <a href="//www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors <a href="//creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA</a>',
+            'attribution' => '&copy; <a href="//www.openstreetmap.org/" rel="noopener" target="_blank">OpenStreetMap</a> contributors <a href="//creativecommons.org/licenses/by-sa/2.0/" rel="noopener" target="_blank">CC BY-SA</a>',
             'tileUrl' => 'http://tile.openstreetmap.org/{z}/{x}/{y}.png',
             'maxZoom' => 18,
             'tileSize' => '256x256'

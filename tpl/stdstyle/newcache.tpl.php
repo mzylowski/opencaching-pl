@@ -571,7 +571,7 @@ $(document).ready(function(){
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td><div class="notice">{{difficulty_problem}} <a href="difficultyForm.php" target="_BLANK">{{rating_system}}</a>.</div>
+            <td><div class="notice">{{difficulty_problem}} <a href="difficultyForm.php" rel="noopener" target="_blank">{{rating_system}}</a>.</div>
             </td>
         </tr>
         <tr class="form-group-sm"><td><p class="content-title-noshade">{{additional_information}} ({{optional}}):</p></td>
@@ -656,7 +656,7 @@ $(document).ready(function(){
         <tr>
             <td colspan="2">
                 <div class="notice"><b><i>{{mandatory_field}}.</i></b> {{full_desc_long_text}}</div>
-                <div class="notice">{{html_usage}} <a href="articles.php?page=htmltags" target="_blank">{{available_html}}</a></div>
+                <div class="notice">{{html_usage}} <a href="articles.php?page=htmltags" rel="noopener" target="_blank">{{available_html}}</a></div>
                 <div class="notice">{{geocaching_com_foto_info}}</div>
             </td>
         </tr>

@@ -445,7 +445,7 @@ use Controllers\MainMapController;
                 <div>
                     <img src="images/gk.png" class="icon16" alt="geokret" title="GeoKrety visited">
                     <span class="no-whitespace">
-                        <a class="links no-whitespace" href="<?=GeoKretyApi::GEOKRETY_URL?>/szukaj.php?wpt=<?=$view->geoCache->getWaypointId()?>" target="_blank" rel="noopener">{{history_gk}}</a>
+                        <a class="links no-whitespace" href="<?=GeoKretyApi::GEOKRETY_URL?>/szukaj.php?wpt=<?=$view->geoCache->getWaypointId()?>" rel="noopener" target="_blank" rel="noopener">{{history_gk}}</a>
                         <img src="/tpl/stdstyle/images/misc/linkicon.png" alt="link" class="img12">
                     </span>
                 </div>
@@ -472,7 +472,7 @@ use Controllers\MainMapController;
             <?php if ($view->isUserAuthorized || $view->alwaysShowCoords) { ?>
                 <b>{{available_maps}}:</b>
                 <?php foreach($view->externalMaps as $mapName => $url) { ?>
-                  <a target="_blank" href="<?=$url?>" rel="noopener"><?=$mapName?></a>
+                  <a rel="noopener" target="_blank" href="<?=$url?>" rel="noopener"><?=$mapName?></a>
                 <?php } //foreach ?>
             <?php } //else $view->isUserAuthorized || $view->alwaysShowCoords ?>
         </div>
@@ -637,7 +637,7 @@ use Controllers\MainMapController;
     </div>
 
     <div class="notice noprint">
-        <a class="links" href="{wiki_link_additionalWaypoints}" target="_blank">
+        <a class="links" href="{wiki_link_additionalWaypoints}" rel="noopener" target="_blank">
             {{show_info_about_wp}}
             <img src="tpl/stdstyle/images/misc/linkicon.png" alt="link">
         </a>
@@ -789,7 +789,7 @@ use Controllers\MainMapController;
                 <?php foreach ($view->geoCache->getNatureRegions() as $npa) { ?>
                     <tr>
                       <td>
-                          <a target="_blank" href="http://<?=$npa['npalink']?>">
+                          <a rel="noopener" target="_blank" href="http://<?=$npa['npalink']?>">
                               <?=$npa['npaname']?>
                           </a>
                       </td>
@@ -863,7 +863,7 @@ use Controllers\MainMapController;
           <?php foreach ($view->geoCache->getMp3List() as $mp3) { ?>
               <div class="viewcache-pictureblock">
               <div class="img-shadow">
-                  <a href="<?=$mp3['url']?>" target="_blank">
+                  <a href="<?=$mp3['url']?>" rel="noopener" target="_blank">
                       <img src="tpl/stdstyle/images/blue/32x32-get-mp3.png" alt="">
                   </a>
               </div>
@@ -929,7 +929,7 @@ use Controllers\MainMapController;
                 <div>
                     <img src="tpl/stdstyle/images/action/16x16-search.png" class="icon16" alt="">
                         {{find_geocaches_on}}:
-                        <a target="_blank" href="http://geocaching.gpsgames.org/cgi-bin/ge.pl?basic=yes&amp;download=Google+Maps&amp;zoom=8&amp;lat_1={latitude}&amp;lon_1={longitude}" rel="noopener">gpsgames.org</a> |
+                        <a rel="noopener" target="_blank" href="http://geocaching.gpsgames.org/cgi-bin/ge.pl?basic=yes&amp;download=Google+Maps&amp;zoom=8&amp;lat_1={latitude}&amp;lon_1={longitude}" rel="noopener">gpsgames.org</a> |
                         <a href="http://www.opencaching.cz/search.php?searchto=searchbydistance&amp;showresult=1&amp;expert=0&amp;output=HTML&amp;sort=bydistance&amp;f_userowner=0&amp;f_userfound=0&amp;f_inactive=1&amp;country=&amp;cachetype=&amp;cache_attribs=&amp;cache_attribs_not=7&amp;latNS={latNS}&amp;lat_h={lat_h}&amp;lat_min={lat_min}&amp;lonEW={lonEW}&amp;lon_h={lon_h}&amp;lon_min={lon_min}&amp;distance=100&amp;unit=km" rel="noopener">oc.cz</a> |
                         <a href="http://www.opencaching.de/search.php?searchto=searchbydistance&amp;showresult=1&amp;expert=0&amp;output=HTML&amp;sort=bydistance&amp;f_userowner=0&amp;f_userfound=0&amp;f_inactive=1&amp;country=&amp;cachetype=&amp;cache_attribs=&amp;cache_attribs_not=7&amp;latNS={latNS}&amp;lat_h={lat_h}&amp;lat_min={lat_min}&amp;lonEW={lonEW}&amp;lon_h={lon_h}&amp;lon_min={lon_min}&amp;distance=100&amp;unit=km" rel="noopener">oc.de</a>
                 </div>

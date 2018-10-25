@@ -7,11 +7,11 @@ use Utils\Uri\SimpleRouter;
   <div class="buffer"></div>
   <h2>
     <?=tr('gdpr_text')?>
-    <a href="<?=$view->_wikiLinkRules?>" target="_blank" class="btn btn-default btn-md"><?=tr('rules')?></a>
+    <a href="<?=$view->_wikiLinkRules?>" rel="noopener" target="_blank" class="btn btn-default btn-md"><?=tr('rules')?></a>
   <?php
       if (! empty($view->_wikiLinkPrivacyPolicy)) {
       ?>
-        <a href="<?=$view->_wikiLinkPrivacyPolicy?>" target="_blank" class="btn btn-default btn-md"><?=tr('mnu_privacyPolicy')?></a>
+        <a href="<?=$view->_wikiLinkPrivacyPolicy?>" rel="noopener" target="_blank" class="btn btn-default btn-md"><?=tr('mnu_privacyPolicy')?></a>
       <?php
       }
   ?>

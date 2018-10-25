@@ -326,8 +326,8 @@ $founds = XDb::xMultiVariableQueryValue(
             <div style="display: {GeoKretyApiNotConfigured};">
                 <span class="errormsg"><br>{{GKApi07}}</span><br><br>
                 {{GKApi08}}<br>
-                1. {{GKApi09}} (<a href="<?=GeoKretyApi::GEOKRETY_URL?>/mypage.php" class="links" target="_blank">{{GKApi04}}</a>)<br>
-                2. {{GKApi10}} (<a href="myprofile.php?action=change" class="links" target="_blank">{{GKApi04}}</a>)<br>
+                1. {{GKApi09}} (<a href="<?=GeoKretyApi::GEOKRETY_URL?>/mypage.php" class="links" rel="noopener" target="_blank">{{GKApi04}}</a>)<br>
+                2. {{GKApi10}} (<a href="myprofile.php?action=change" class="links" rel="noopener" target="_blank">{{GKApi04}}</a>)<br>
             </div>
             <div style="display: {GeoKretyApiConfigured}">
                 <p><br>{{GKApi05}}</p>

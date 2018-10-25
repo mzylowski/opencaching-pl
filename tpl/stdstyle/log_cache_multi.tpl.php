@@ -78,7 +78,7 @@ function get_icon_for_cache_type($type)
             global $dateFormat, $datetimeFormat;
             foreach ($dane as $k => $v) {
                 ?>
-                <form method="POST" name="logCacheForm" action="log.php?cacheid=<?php echo @$v['cache_id']; ?>" target="_blank">
+                <form method="POST" name="logCacheForm" action="log.php?cacheid=<?php echo @$v['cache_id']; ?>" rel="noopener" target="_blank">
                     <textarea style="visibility:hidden;position:absolute;" name="logtext"><?php echo $v['koment']; ?></textarea>
                     <input type="hidden" name="logtype" value="<?php echo $v['status']; ?>" />
                     <input type="hidden" name="logyear" value="<?php echo $v['rok']; ?>" />

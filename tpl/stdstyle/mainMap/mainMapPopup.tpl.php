@@ -5,14 +5,14 @@
     <div class="row">
 
       <div class="row">
-        <a href="/viewcache.php?wp={{cacheCode}}&print_list=y" target="_blank">
+        <a href="/viewcache.php?wp={{cacheCode}}&print_list=y" rel="noopener" target="_blank">
           <img src="/images/actions/list-add-16.png" title="<?=tr("add_to_list")?>"
                alt="<?=tr("add_to_list")?>">
         </a>
 
         <img id="cacheIcon" src="{{cacheIcon}}" alt="cache-icon">
 
-        <a title="{{cacheName}}" href="{{cacheUrl}}" target="_blank" class="col">
+        <a title="{{cacheName}}" href="{{cacheUrl}}" rel="noopener" target="_blank" class="col">
           <div>{{cacheCode}}</div>
           <div id="cacheName">{{cacheName}}</div>
         </a>
@@ -37,7 +37,7 @@
 
         <div>
           <b><?=tr("owner")?>:</b>
-          <a href="{{ownerProfileUrl}}" target="_blank">{{ownerName}}</a>
+          <a href="{{ownerProfileUrl}}" rel="noopener" target="_blank">{{ownerName}}</a>
         </div>
 
       {{#if isEvent}}
@@ -93,7 +93,7 @@
     <div>
       <div>
         <b><?=tr("pt000")?>:</b>
-        <a href="{{powerTrailUrl}}" title="{{powerTrailName}}" target="_blank">
+        <a href="{{powerTrailUrl}}" title="{{powerTrailName}}" rel="noopener" target="_blank">
         <img src="{{powerTrailIcon}}" alt="<?=tr("pt000")?>" title="{{powerTrailName}}">
         {{powerTrailName}}</a>
       </div>

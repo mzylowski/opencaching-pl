@@ -25,7 +25,7 @@ body {
     <div class="tab-text">
       <?php
       foreach ($view->attenders as $user) { ?>
-        <p><a href="<?=User::GetUserProfileUrl($user['user_id'])?>" class="links" target="_blank"><?=$user['username']?></a></p>
+        <p><a href="<?=User::GetUserProfileUrl($user['user_id'])?>" class="links" rel="noopener" target="_blank"><?=$user['username']?></a></p>
       <?php } ?>
     </div>
     <div class="align-center">

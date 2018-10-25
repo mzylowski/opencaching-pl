@@ -418,7 +418,7 @@ $defaultCountryList = array("AT", "BE", "BY", "BG", "HR", "CZ", "DK", "EE", "FI"
 
 $mapsConfig = array(
     'OSMapa' => array(
-        'attribution' => '&copy; <a href="//www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors <a href="//creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA</a> | Hosting:<a href="http://trail.pl/" target="_blank">trail.pl</a> i <a href="http://centuria.pl/" target="_blank">centuria.pl</a>',
+        'attribution' => '&copy; <a href="//www.openstreetmap.org/" rel="noopener" target="_blank">OpenStreetMap</a> contributors <a href="//creativecommons.org/licenses/by-sa/2.0/" rel="noopener" target="_blank">CC BY-SA</a> | Hosting:<a href="http://trail.pl/" rel="noopener" target="_blank">trail.pl</a> i <a href="http://centuria.pl/" rel="noopener" target="_blank">centuria.pl</a>',
         'name' => 'OSMapa',
         'tileUrl' => 'http://tile.openstreetmap.pl/osmapa.pl/{z}/{x}/{y}.png',
         'maxZoom' => 18,
@@ -426,20 +426,20 @@ $mapsConfig = array(
     ),
     'OSM' => array(
         'name' => 'OSM',
-        'attribution' => '&copy; <a href="//www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors <a href="//creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA</a>',
+        'attribution' => '&copy; <a href="//www.openstreetmap.org/" rel="noopener" target="_blank">OpenStreetMap</a> contributors <a href="//creativecommons.org/licenses/by-sa/2.0/" rel="noopener" target="_blank">CC BY-SA</a>',
         'tileUrl' => 'http://tile.openstreetmap.org/{z}/{x}/{y}.png',
         'maxZoom' => 18,
         'tileSize' => '256x256'
     ),
     'UMP' => array(
         'name' => 'UMP',
-        'attribution' => '&copy; Mapa z <a href="http://ump.waw.pl/" target="_blank">UMP-pcPL</a>',
+        'attribution' => '&copy; Mapa z <a href="http://ump.waw.pl/" rel="noopener" target="_blank">UMP-pcPL</a>',
         'tileUrl' => 'http://tiles.ump.waw.pl/ump_tiles/{z}/{x}/{y}.png',
         'maxZoom' => 18,
         'tileSize' => '256x256',
     ),
     'Topo' => array(
-        'attribution' => '&copy; <a href="http://geoportal.gov.pl/" target="_blank">geoportal.gov.pl</a>',
+        'attribution' => '&copy; <a href="http://geoportal.gov.pl/" rel="noopener" target="_blank">geoportal.gov.pl</a>',
         'imageMapTypeJS' => 'new google.maps.ImageMapType(new WMSImageMapTypeOptions(
                                         "Topo",
                                         "http://mapy.geoportal.gov.pl:80/wss/service/img/guest/TOPO/MapServer/WmsServer",
@@ -448,7 +448,7 @@ $mapsConfig = array(
                                         "image/jpeg"))',
     ),
     'Orto' => array(
-        'attribution' => '&copy; <a href="http://geoportal.gov.pl/" target="_blank">geoportal.gov.pl</a>',
+        'attribution' => '&copy; <a href="http://geoportal.gov.pl/" rel="noopener" target="_blank">geoportal.gov.pl</a>',
         'imageMapTypeJS' => 'new google.maps.ImageMapType(new WMSImageMapTypeOptions(
                                         "Orto",
                                         "http://mapy.geoportal.gov.pl:80/wss/service/img/guest/ORTO/MapServer/WmsServer",

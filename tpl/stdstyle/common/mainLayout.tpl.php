@@ -216,7 +216,7 @@
                   <?php foreach($view->_menuBar as $key=>$url) { ?>
                     <li class="nav-item">
                       <?php if(is_array($url)) { //array="open in new window" ?>
-                          <a class="nav-link" href="<?=$url[0]?>" target="_blank" rel="noopener"><?=$key?></a>
+                          <a class="nav-link" href="<?=$url[0]?>" rel="noopener" target="_blank" rel="noopener"><?=$key?></a>
                         <?php } else { // !is_array($url) ?>
                           <a class="nav-link" href="<?=$url?>" rel="noopener"><?=$key?></a>
                         <?php } // if-is_array($url) ?>
@@ -237,7 +237,7 @@
                     <div class="nav nav-pills flex-column">
                       <?php foreach($view->_nonAuthUserMenu as $key => $url){ ?>
                         <?php if(is_array($url)) { //array="open in new window" ?>
-                          <a class="nav-link" href="<?=$url[0]?>" target="_blank" rel="noopener"><?=$key?></a>
+                          <a class="nav-link" href="<?=$url[0]?>" rel="noopener" target="_blank" rel="noopener"><?=$key?></a>
                         <?php } else { // !is_array($url) ?>
                           <a class="nav-link" href="<?=$url?>" rel="noopener"><?=$key?></a>
                         <?php } // if-is_array($url) ?>
@@ -249,7 +249,7 @@
                     <div class="nav nav-pills flex-column">
                       <?php foreach($view->_authUserMenu as $key => $url){ ?>
                         <?php if(is_array($url)) { //array="open in new window" ?>
-                          <a class="nav-link" href="<?=$url[0]?>" target="_blank" rel="noopener"><?=$key?></a>
+                          <a class="nav-link" href="<?=$url[0]?>" rel="noopener" target="_blank" rel="noopener"><?=$key?></a>
                         <?php } else { // !is_array($url) ?>
                           <a class="nav-link" href="<?=$url?>" rel="noopener"><?=$key?></a>
                         <?php } // if-is_array($url) ?>
@@ -260,7 +260,7 @@
                     <div class="nav nav-pills flex-column">
                       <?php foreach($view->_customUserMenu as $key => $url){ ?>
                         <?php if(is_array($url)) { //array="open in new window" ?>
-                          <a class="nav-link" href="<?=$url[0]?>" target="_blank" rel="noopener"><?=$key?></a>
+                          <a class="nav-link" href="<?=$url[0]?>" rel="noopener" target="_blank" rel="noopener"><?=$key?></a>
                         <?php } else { // !is_array($url) ?>
                           <a class="nav-link" href="<?=$url?>" rel="noopener"><?=$key?></a>
                         <?php } // if-is_array($url) ?>
@@ -271,7 +271,7 @@
                     <div class="nav nav-pills flex-column">
                       <?php foreach($view->_additionalMenu as $key => $url){ ?>
                         <?php if(is_array($url)) { //array="open in new window" ?>
-                          <a class="nav-link" href="<?=$url[0]?>" target="_blank" rel="noopener"><?=$key?></a>
+                          <a class="nav-link" href="<?=$url[0]?>" rel="noopener" target="_blank" rel="noopener"><?=$key?></a>
                         <?php } else { // !is_array($url) ?>
                           <a class="nav-link" href="<?=$url?>" rel="noopener"><?=$key?></a>
                         <?php } // if-is_array($url) ?>
@@ -283,7 +283,7 @@
                         <div class="nav nav-pills flex-column">
                           <?php foreach($view->_adminMenu as $key => $url){ ?>
                             <?php if(is_array($url)) { //array="open in new window" ?>
-                              <a class="nav-link" href="<?=$url[0]?>" target="_blank" rel="noopener"><?=$key?></a>
+                              <a class="nav-link" href="<?=$url[0]?>" rel="noopener" target="_blank" rel="noopener"><?=$key?></a>
                             <?php } else { // !is_array($url) ?>
                               <a class="nav-link" href="<?=$url?>" rel="noopener"><?=$key?></a>
                             <?php } // if-is_array($url) ?>
@@ -318,7 +318,7 @@
                   <?php foreach($view->_footerMenu as $key => $url){ ?>
                     <?php if(is_array($url)) { //array="open in new window" ?>
                       <a class="btn btn-outline-primary btn-sm"
-                        href="<?=$url[0]?>" target="_blank" rel="noopener"><?=$key?></a>
+                        href="<?=$url[0]?>" rel="noopener" target="_blank" rel="noopener"><?=$key?></a>
                     <?php } else { // !is_array($url) ?>
                       <a class="btn btn-outline-primary btn-sm"
                         href="<?=$url?>" rel="noopener"><?=$key?></a>

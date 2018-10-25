@@ -58,7 +58,7 @@ use Utils\Text\Formatter;
     <tr>
       <td class="content-title-noshade" style="text-align: right;">{{admin_reports_lbl_submiter}}</td>
       <td>
-        <a href="<?=$view->report->getUserSubmit()->getProfileUrl()?>" class="links" target="_blank"><?=$view->report->getUserSubmit()->getUserName()?></a>
+        <a href="<?=$view->report->getUserSubmit()->getProfileUrl()?>" class="links" rel="noopener" target="_blank"><?=$view->report->getUserSubmit()->getUserName()?></a>
         (<?php echo $view->report->getUserSubmit()->getFoundGeocachesCount() + $view->report->getUserSubmit()->getNotFoundGeocachesCount() + $view->report->getUserSubmit()->getHiddenGeocachesCount()?>)
         | {{lastlogins}}: <span class="<?=$view->report->getUserSubmit()->getLastLoginPeriodClass()?>"><?=Formatter::dateTime($view->report->getUserSubmit()->getLastLoginDate())?></span>
       </td>
@@ -83,7 +83,7 @@ use Utils\Text\Formatter;
       <td class="content-title-noshade" style="text-align: right;">{{last_modified_label}}</td>
       <td>
         <?php if ($view->report->getDateLastChange() != null) { echo Formatter::dateTime($view->report->getDateLastChange()); }?>
-        <?php if ($view->report->getUserIdLastChange() != null) {?>(<a href="<?=$view->report->getUserLastChange()->getProfileUrl()?>" class="links" target="_blank"><?=$view->report->getUserLastChange()->getUserName()?></a>) <?php }?>
+        <?php if ($view->report->getUserIdLastChange() != null) {?>(<a href="<?=$view->report->getUserLastChange()->getProfileUrl()?>" class="links" rel="noopener" target="_blank"><?=$view->report->getUserLastChange()->getUserName()?></a>) <?php }?>
       </td>
     </tr>
     <tr>
@@ -97,7 +97,7 @@ use Utils\Text\Formatter;
       <td class="content-title-noshade" style="text-align: right;">{{cache}}</td>
       <td>
         <img src="<?=$view->report->getCache()->getCacheIcon($view->user)?>" height=20 alt="">
-        <a href="<?=$view->report->getCache()->getCacheUrl()?>" class="links" target="_blank"><?=$view->report->getCache()->getCacheName()?> (<?=$view->report->getCache()->getWaypointId()?>)</a><br>
+        <a href="<?=$view->report->getCache()->getCacheUrl()?>" class="links" rel="noopener" target="_blank"><?=$view->report->getCache()->getCacheName()?> (<?=$view->report->getCache()->getWaypointId()?>)</a><br>
         <?=$view->report->getCache()->getCacheLocationObj()->getLocationDesc(' &gt; ')?><br>
         <?php if ($view->report->getCache()->getCacheType() == GeoCache::TYPE_EVENT) { ?>
             <img src="/tpl/stdstyle/images/log/16x16-attend.png" class="icon16" alt="{{attendends}}"> x<?=$view->report->getCache()->getFounds()?>
@@ -123,7 +123,7 @@ use Utils\Text\Formatter;
     <tr>
       <td class="content-title-noshade" style="text-align: right;">{{owner}}</td>
       <td>
-        <a href="<?=$view->report->getCache()->getOwner()->getProfileUrl()?>" class="links" target="_blank"><?=$view->report->getCache()->getOwner()->getUserName()?></a>
+        <a href="<?=$view->report->getCache()->getOwner()->getProfileUrl()?>" class="links" rel="noopener" target="_blank"><?=$view->report->getCache()->getOwner()->getUserName()?></a>
         (<?php echo $view->report->getCache()->getOwner()->getFoundGeocachesCount() + $view->report->getCache()->getOwner()->getNotFoundGeocachesCount() + $view->report->getCache()->getOwner()->getHiddenGeocachesCount()?>)
         | {{lastlogins}}: <span class="<?=$view->report->getCache()->getOwner()->getLastLoginPeriodClass()?>"><?=Formatter::dateTime($view->report->getCache()->getOwner()->getLastLoginDate())?></span>
       </td>

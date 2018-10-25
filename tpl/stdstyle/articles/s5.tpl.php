@@ -107,7 +107,7 @@ while ( $rCaches = XDb::xFetchArray($rsCaches) ) {
 
     $widthB = round(100 * ($rCaches['idx'] / 200) / 1, 0);
 
-    $line = '<tr><td><span class="content-title-noshade txt-blue08" >{index}</span></td><td><span class="content-title-noshade txt-green10">{rating}</span></td><td><span class="content-title-noshade txt-green10">{fbr}</span></td><td><a class="links" href="viewcache.php?cacheid={cacheid}" target="_blank">{name}</a></td><td><a class="links" href="viewprofile.php?userid={userid}" target="_blank">{username}</a></td></tr>';
+    $line = '<tr><td><span class="content-title-noshade txt-blue08" >{index}</span></td><td><span class="content-title-noshade txt-green10">{rating}</span></td><td><span class="content-title-noshade txt-green10">{fbr}</span></td><td><a class="links" href="viewcache.php?cacheid={cacheid}" rel="noopener" target="_blank">{name}</a></td><td><a class="links" href="viewprofile.php?userid={userid}" rel="noopener" target="_blank">{username}</a></td></tr>';
 
     $line = str_replace('{index}', $rCaches['idx'], $line);
     $line = str_replace('{rating}', $rCaches['ratings'], $line);

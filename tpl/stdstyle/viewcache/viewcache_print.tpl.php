@@ -59,7 +59,7 @@ use lib\Objects\GeoKret\GeoKretyApi;
           <img src="tpl/stdstyle/images/free_icons/link.png" class="icon16" alt="" title="">&nbsp;{{listed_also_on}}:
           <span class="listed-on">
           <?php foreach ($view->otherSitesListing as $site) { ?>
-            <a href=<?=$site->link?> target="_blank"><?=$site->sitename?> (<?=$site->wp?>)</a>
+            <a href=<?=$site->link?> rel="noopener" target="_blank"><?=$site->sitename?> (<?=$site->wp?>)</a>
           <?php } //foreach ?>
           </span>
         <?php } //!empty($view->otherSitesListing ?>
@@ -223,7 +223,7 @@ use lib\Objects\GeoKret\GeoKretyApi;
                                 <tr>
                                   <td align="center" valign="middle">
                                     <font color="blue">
-                                      <a target="_blank" href="http://<?=$npa['npalink']?>"><?=$npa['npaname']?></a>
+                                      <a rel="noopener" target="_blank" href="http://<?=$npa['npalink']?>"><?=$npa['npaname']?></a>
                                     </font>
                                     <br>
                                   </td>
@@ -259,7 +259,7 @@ use lib\Objects\GeoKret\GeoKretyApi;
 
                          <?php } //if-Natura2000-presents ?>
 
-                </td><td align="center" valign="middle"><a class="links" href="http://www.natura2000.pl/" target="_blank"><img src="tpl/stdstyle/images/misc/natura2000.png" alt="" title=""></a></td>
+                </td><td align="center" valign="middle"><a class="links" href="http://www.natura2000.pl/" rel="noopener" target="_blank"><img src="tpl/stdstyle/images/misc/natura2000.png" alt="" title=""></a></td>
             </tr>
         </table>
     </center>

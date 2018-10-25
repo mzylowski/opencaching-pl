@@ -31,7 +31,7 @@ $view->callChunk('tinyMCE');
     <div class="buffer"></div>
     <p id="scriptwarning" class="errormsg">{{javascript_edit_info}}</p>
     <div class="content2-container"><textarea id="desc" name="desc" class="desc tinymce">{desc}</textarea></div>
-    <div class="notice">{{html_usage}} <a href="articles.php?page=htmltags" target="_blank">{{available_html}}</a></div>
+    <div class="notice">{{html_usage}} <a href="articles.php?page=htmltags" rel="noopener" target="_blank">{{available_html}}</a></div>
     <div class="notice">{{geocaching_com_foto_info}}</div>
     <div class="buffer"></div>
     <div class="content-title-noshade-size12">{{hint_info}}:</div>

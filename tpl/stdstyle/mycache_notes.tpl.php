@@ -29,7 +29,7 @@
 </div>
 
 
-<div class="notice noprint">{{mycache_notes}} <a href="{wiki_link_cacheNotes}" target="_blank">{{here}}</a></div>
+<div class="notice noprint">{{mycache_notes}} <a href="{wiki_link_cacheNotes}" rel="noopener" target="_blank">{{here}}</a></div>
 
 
 

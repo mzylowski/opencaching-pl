@@ -31,7 +31,7 @@ use lib\Objects\GeoKret\GeoKretyApi;
       <tr>
         <td>&nbsp;</td>
         <td>
-          <div class="notice" style="width:500px;height:44px;">{{GKApi03}} <a href="<?=GeoKretyApi::GEOKRETY_URL?>/mypage.php" target="_blank" rel="noopener">{{GKApi04}}</a></div>
+          <div class="notice" style="width:500px;height:44px;">{{GKApi03}} <a href="<?=GeoKretyApi::GEOKRETY_URL?>/mypage.php" rel="noopener" target="_blank" rel="noopener">{{GKApi04}}</a></div>
         </td>
       </tr>
       {guide_start}
